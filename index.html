@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          colors: {
+            transparent: "transparent",
+            themeLightBlue: "#1f4bc4",
+            theme: "#4f1d02",
+            themeOrange: "#eb6b09",
+            themeFont: "#ff5e00",
+            gold: "gold",
+            white: "#ffff",
+            yellow: "#ffff00",
+            lightColor: "#1a1919",
+            gray: "#babab8",
+            black: "black",
+            darkGray: "#383838",
+            darkBlue: "#284773",
+          },
+          screens: {
+            sm: "640px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+          extend: {
+            screens: {
+              xs: "258px",
+            },
+            backgroundImage: {
+              "hero-img": "url('./img/hero image2.jpg')",
+              "working-process":
+                "url('./img/Wroking Process/Working process hero img.jpg')",
+              "footerImg": "url('./img/Footer Image.jpg')"
+            },
+            boxShadow: {
+              "5xl": "0 5px 10px gray",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="tailwind.config.js"></script>
+    <style>
+      .relative:hover .w-full {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+      <div
+        class="grid md:grid-cols-2 xs:grid-cols-1 lg:gap-10 bg-themeLightBlue px-20 text-white text-sm py-2"
+      >
+        <div class="flex flex-wrap justify-around">
+          <h2>500UL, 50th NY 10024 USA</h2>
+          <h2>infoZwebagencye@gmail.com</h2>
+        </div>
+        <div class="flex flex-wrap justify-around">
+          <h2>Call us <span class="text-yellow">+92 30321 50993</span></h2>
+          <h2>follow us on:</h2>
+          <div>
+            <a href="#"><i class="bx bxl-facebook mx-1"></i></a>
+            <a href="#"><i class="bx bxl-twitter mx-1"></i></a>
+            <a href="#"><i class="bx bxl-instagram mx-1"></i></a>
+            <a href="#"><i class="bx bxl-linkedin mx-1"></i></a>
+            <a href="#"><i class="bx bxl-whatsapp mx-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-between items-center px-20 bg-white sticky top-0 w-full z-50">
+        <div>
+          <img
+            src="img/Black Lettering Creative Logo.png"
+            alt=""
+            width="50px"
+          />
+        </div>
+        <div class="w-4/12 flex flex-wrap justify-between">
+          <a class="hover:text-theme transition-all" href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Project</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="w-30">
+          <button
+            class="w-28 bg-yellow p-2 transition-all rounded-lg hover:bg-theme hover:text-white"
+          >
+            Get Quetee
+          </button>
+        </div>
+      </div>
+    <section
+      class="bg-hero-img bg-cover bg-center bg-fixed h-screen flex justify-center box-border items-center text-white"
+    >
+      <div
+        class="md:w-7/12 min-h-50 text-center xs:py-4 sm:py-5 bg-lightColor/[0.7] hover:bg-lightColor/50 transition-all rounded-xl border border-white"
+      >
+        <h3 class="text-xl text-gold">Welcome to Pixel Connect</h3>
+        <h1 class="xs:text-4xl lg:text-6xl 2xl:text-8xl">
+          Power UP Your Business With Digital Solutions
+        </h1>
+        <button
+          class="w-28 p-2 bg-transparent text-yellow border-2 border-white transition-all rounded-md mt-5 hover:bg-white/50 hover:text-gold"
+        >
+          Get Quetee
+        </button>
+      </div>
+    </section>
+    <section>
+      <div class="text-center">
+        <h1 class="py-4 md:text-6xl md:font-semibold">Our Services</h1>
+        <div
+          class="container max-w-[1200px] m-auto grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-3"
+        >
+          <div
+            class="hover:mt-[-10px] hover:mb-[10px] border-x-2 border-y-4 rounded-md xs:mx-3 transition-all duration-500"
+          >
+            <img
+              class="ml-24 animate-bounce mt-7"
+              src="img/services logo/Web development logo.webp"
+              alt=""
+              width="80px height
+                    80px"
+            />
+            <h1>Web development</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              ipsam incidunt unde nesciunt repellendus nihil et, alias
+              temporibus atque reprehenderit nostrum. Omnis vitae, adipisci odio
+              deleniti beatae ipsum suscipit dolorum.
+            </p>
+          </div>
+          <div
+            class="hover:mt-[-10px] hover:mb-[10px] border-x-2 border-y-4 rounded-md xs:mx-3 transition-all duration-500"
+          >
+            <img
+              class="ml-24 animate-bounce mt-7"
+              src="img/services logo/App development.jpg"
+              alt=""
+              width="80px height
+                    80px"
+            />
+            <h1>App development</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              ipsam incidunt unde nesciunt repellendus nihil et, alias
+              temporibus atque reprehenderit nostrum. Omnis vitae, adipisci odio
+              deleniti beatae ipsum suscipit dolorum.
+            </p>
+          </div>
+          <div
+            class="hover:mt-[-10px] hover:mb-[10px] border-x-2 border-y-4 rounded-md xs:mx-3 transition-all duration-500"
+          >
+            <img
+              class="ml-24 animate-bounce mt-7"
+              src="img/services logo/Wrod press logo.png"
+              alt=""
+              width="80px height
+                    80px"
+            />
+            <h1>Word Press development</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              ipsam incidunt unde nesciunt repellendus nihil et, alias
+              temporibus atque reprehenderit nostrum. Omnis vitae, adipisci odio
+              deleniti beatae ipsum suscipit dolorum.
+            </p>
+          </div>
+          <div
+            class="hover:mt-[-10px] hover:mb-[10px] border-x-2 border-y-4 rounded-md xs:mx-3 transition-all duration-500"
+          >
+            <img
+              class="ml-24 animate-bounce mt-7"
+              src="img/services logo/Theme logo.jpg"
+              alt=""
+              width="80px height
+                    80px"
+            />
+            <h1>Theme development</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              ipsam incidunt unde nesciunt repellendus nihil et, alias
+              temporibus atque reprehenderit nostrum. Omnis vitae, adipisci odio
+              deleniti beatae ipsum suscipit dolorum.
+            </p>
+          </div>
+          <div
+            class="hover:mt-[-10px] hover:mb-[10px] border-x-2 border-y-4 rounded-md xs:mx-3 transition-all duration-500"
+          >
+            <img
+              class="ml-24 animate-bounce mt-7"
+              src="img/services logo/shopify logo.svg"
+              alt=""
+              width="80px height
+                    80px"
+            />
+            <h1>Shopify development</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              ipsam incidunt unde nesciunt repellendus nihil et, alias
+              temporibus atque reprehenderit nostrum. Omnis vitae, adipisci odio
+              deleniti beatae ipsum suscipit dolorum.
+            </p>
+          </div>
+          <div
+            class="hover:mt-[-10px] hover:mb-[10px] border-x-2 border-y-4 rounded-md xs:mx-3 transition-all duration-500"
+          >
+            <img
+              class="ml-24 my-6 animate-bounce mt-7"
+              src="img/services logo/Seo logo.png"
+              alt=""
+              width="80px height
+                    80px"
+            />
+            <h1>Search Engine Optimizaiton</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              ipsam incidunt unde nesciunt repellendus nihil et, alias
+              temporibus atque reprehenderit nostrum. Omnis vitae, adipisci odio
+              deleniti beatae ipsum suscipit dolorum.
+            </p>
+          </div>
+          <div
+            class="hover:mt-[-10px] hover:mb-[10px] border-x-2 border-y-4 rounded-md xs:mx-3 transition-all duration-500"
+          >
+            <img
+              class="ml-24 animate-bounce mt-7"
+              src="img/services logo/Website design logo.jpeg"
+              alt=""
+              width="80px height
+                    80px"
+            />
+            <h1>Website Design</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              ipsam incidunt unde nesciunt repellendus nihil et, alias
+              temporibus atque reprehenderit nostrum. Omnis vitae, adipisci odio
+              deleniti beatae ipsum suscipit dolorum.
+            </p>
+          </div>
+          <div
+            class="hover:mt-[-10px] hover:mb-[10px] border-x-2 border-y-4 rounded-md xs:mx-3 transition-all duration-500"
+          >
+            <img
+              class="ml-24 animate-bounce mt-7"
+              src="img/services logo/UI UX logo.png"
+              alt=""
+              width="80px height
+                    80px"
+            />
+            <h1>UI/UX Solutions</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              ipsam incidunt unde nesciunt repellendus nihil et, alias
+              temporibus atque reprehenderit nostrum. Omnis vitae, adipisci odio
+              deleniti beatae ipsum suscipit dolorum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-[1200px] mx-auto">
+      <div>
+        <h1 class="text-center mt-10 text-4xl">Why Choose Us</h1>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-4 mt-10 lg:m-0 md:m-20">
+        <div
+          class="grid gap-3 lg:grid-cols-3 rounded-md py-5 shadow-md shadow-gray"
+        >
+          <div class="w-36 md:mx-auto border-r border-r-gray pr-5">
+            <img
+              class="mx-auto animate-bounce"
+              src="img/Choose us/developer_icon1.jpg"
+              alt=""
+              width="80px"
+            />
+            <hr class="text-gray" />
+            <h1 class="text-4xl text-center mt-7">01</h1>
+          </div>
+          <div class="col-span-2">
+            <h1 class="text-4xl my-7">Professional Developers</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
+              numquam molestiae, culpa delectus
+            </p>
+          </div>
+        </div>
+        <div
+          class="grid gap-3 grid-cols-3 rounded-md py-5 shadow-md shadow-gray"
+        >
+          <div class="w-36 border-r border-r-gray pr-5">
+            <img
+              class="mx-auto animate-bounce"
+              src="img/Choose us/Handshake-2.png"
+              alt=""
+              width="80px"
+            />
+            <hr class="text-gray" />
+            <h1 class="text-4xl text-center mt-7">01</h1>
+          </div>
+          <div class="col-span-2">
+            <h1 class="text-4xl my-7">30 Days Warranty</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
+              numquam molestiae, culpa delectus cumque
+            </p>
+          </div>
+        </div>
+        <div
+          class="grid gap-3 grid-cols-3 rounded-md py-5 shadow-md shadow-gray"
+        >
+          <div class="w-36 border-r border-r-gray pr-5">
+            <img
+              class="mx-auto animate-bounce"
+              src="img/Choose us/Clock icon3.jpg"
+              alt=""
+              width="80px"
+            />
+            <hr class="text-gray" />
+            <h1 class="text-4xl text-center mt-7">01</h1>
+          </div>
+          <div class="col-span-2">
+            <h1 class="text-4xl my-7">30 Days Warranty</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
+              numquam molestiae, culpa delectus.
+            </p>
+          </div>
+        </div>
+        <div
+          class="grid gap-3 grid-cols-3 rounded-md py-5 shadow-md shadow-gray"
+        >
+          <div class="w-36 border-r border-r-gray pr-5">
+            <img
+              class="mx-auto animate-bounce"
+              src="img/Choose us/Wallet icons.jpg"
+              alt=""
+              width="80px"
+            />
+            <hr class="text-gray" />
+            <h1 class="text-4xl text-center mt-7">01</h1>
+          </div>
+          <div class="col-span-2">
+            <h1 class="text-4xl my-7">Competitive Priceses</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
+              numquam molestiae, culpa delectus cumque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-working-process bg-no-repeat bg-cover bg-fixed text-white w-full py-16 my-10"
+    >
+      <h1 class="my-7 text-4xl text-center text-yellow">Our Working Process</h1>
+      <div
+        class="container lg:max-w-[1200px] mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-3"
+      >
+        <div
+          class="transition-all duration-500 bg-white/10 hover:bg-white/30 border border-white rounded-md py-10 px-6"
+        >
+          <div class="grid grid-cols-4 place-center items-center mb-5">
+            <i
+              class="bx bxs-face-mask mx-auto text-5xl animate-bounce"
+              style="color: #ffff00"
+            ></i>
+            <div class="col-span-3">
+              <p class="text-yellow">Step - 1</p>
+              <h2 class="text-2xl">Meet Our Team</h2>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+            ullam explicabo, ipsum.
+          </p>
+        </div>
+        <div
+          class="transition-all duration-500 bg-white/10 hover:bg-white/30 border border-white rounded-md py-10 px-6"
+        >
+          <div class="grid grid-cols-4 place-center items-center mb-5">
+            <i
+              class="bx bxs-face-mask mx-auto text-5xl animate-bounce"
+              style="color: #ffff00"
+            ></i>
+            <div class="col-span-3">
+              <p class="text-yellow">Step - 2</p>
+              <h2 class="text-2xl">Get Estimations</h2>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+            ullam explicabo, ipsum.
+          </p>
+        </div>
+        <div
+          class="transition-all duration-500 bg-white/10 hover:bg-white/30 border border-white rounded-md py-10 px-6"
+        >
+          <div class="grid grid-cols-4 place-center items-center mb-5">
+            <i
+              class="bx bxs-face-mask mx-auto text-5xl animate-bounce"
+              style="color: #ffff00"
+            ></i>
+            <div class="col-span-3">
+              <p class="text-yellow">Step - 3</p>
+              <h2 class="text-2xl">Short Projects</h2>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+            ullam explicabo, ipsum.
+          </p>
+        </div>
+        <div
+          class="transition-all duration-500 bg-white/10 hover:bg-white/30 border border-white rounded-md py-10 px-6"
+        >
+          <div class="grid grid-cols-4 place-center items-center mb-5">
+            <i
+              class="bx bxs-face-mask mx-auto text-5xl animate-bounce"
+              style="color: #ffff00"
+            ></i>
+            <div class="col-span-3">
+              <p class="text-yellow">Step - 4</p>
+              <h2 class="text-2xl">Development</h2>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+            ullam explicabo, ipsum.
+          </p>
+        </div>
+        <div
+          class="transition-all duration-500 bg-white/10 hover:bg-white/30 border border-white rounded-md py-10 px-6"
+        >
+          <div class="grid grid-cols-4 place-center items-center mb-5">
+            <i
+              class="bx bxs-face-mask mx-auto text-5xl animate-bounce"
+              style="color: #ffff00"
+            ></i>
+            <div class="col-span-3">
+              <p class="text-yellow">Step - 5</p>
+              <h2 class="text-2xl">Review Projects</h2>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+            ullam explicabo, ipsum.
+          </p>
+        </div>
+        <div
+          class="transition-all duration-500 bg-white/10 hover:bg-white/30 border border-white rounded-md py-10 px-6"
+        >
+          <div class="grid grid-cols-4 place-center items-center mb-5">
+            <i
+              class="bx bxs-face-mask mx-auto text-5xl animate-bounce"
+              style="color: #ffff00"
+            ></i>
+            <div class="col-span-3">
+              <p class="text-yellow">Step - 6</p>
+              <h2 class="text-2xl">Dilver Projects</h2>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+            ullam explicabo, ipsum.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-[1200px] mx-auto">
+      <h1 class="text-4xl text-center mb-5 font-semibold">Our Protfolio</h1>
+      <div class="grid xs:mx-auto md:grid-cols-3 gap-4">
+        <div class="relative overflow-hidden rounded-md h-full w-full">
+          <img
+            class="block xs:w-4/5 md:w-full xs:mx-auto transition-all hover:scale-110"
+            src="img/Portfolio/01_preview.avif"
+            alt=""
+          />
+          <div
+            class="w-full h-0 bg-black/50 absolute left-0 bottom-0 overflow-hidden transition-all hover:h-full duration-1000 px-6"
+          >
+            <h1 class="text-2xl text-gold mt-28">My Portfolio Project 1</h1>
+            <a class="text-white transition-all hover:text-gold" href="#"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div
+          class="relative overflow-hidden rounded-md h-full xs:w-4/5 md:w-full xs:mx-auto"
+        >
+          <img
+            class="block transition-all hover:scale-110 w-full"
+            src="img/Portfolio/1565058262 runaway.jpg"
+            alt=""
+          />
+          <div
+            class="w-full h-0 bg-black/50 absolute left-0 bottom-0 overflow-hidden transition-all hover:h-full duration-1000 px-6"
+          >
+            <h1 class="text-2xl text-gold mt-28">My Portfolio Project 1</h1>
+            <a class="text-white transition-all hover:text-gold" href="#"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div
+          class="relative overflow-hidden rounded-md h-full xs:w-4/5 md:w-full xs:mx-auto"
+        >
+          <img
+            class="block transition-all hover:scale-110 w-full"
+            src="img/Portfolio/busicol-free-template-353x278.jpg"
+            alt=""
+          />
+          <div
+            class="w-full h-0 bg-black/50 absolute left-0 bottom-0 overflow-hidden transition-all hover:h-full duration-1000 px-6"
+          >
+            <h1 class="text-2xl text-gold mt-28">My Portfolio Project 1</h1>
+            <a class="text-white transition-all hover:text-gold" href="#"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div
+          class="relative overflow-hidden rounded-md h-full xs:w-4/5 md:w-full xs:mx-auto"
+        >
+          <img
+            class="block transition-all hover:scale-110 w-full"
+            src="img/Portfolio/creatink-photo-website-template.jpg"
+            alt=""
+          />
+          <div
+            class="w-full h-0 bg-black/50 absolute left-0 bottom-0 overflow-hidden transition-all hover:h-full duration-1000 px-6"
+          >
+            <h1 class="text-2xl text-gold mt-28">My Portfolio Project 1</h1>
+            <a class="text-white transition-all hover:text-gold" href="#"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div
+          class="relative overflow-hidden rounded-md h-full xs:w-4/5 md:w-full xs:mx-auto"
+        >
+          <img
+            class="block transition-all hover:scale-110 w-full"
+            src="img/Portfolio/iPortfolio-bootstrap-website-template-md12.jpg"
+            alt=""
+          />
+          <div
+            class="w-full h-0 bg-black/50 absolute left-0 bottom-0 overflow-hidden transition-all hover:h-full duration-1000 px-6"
+          >
+            <h1 class="text-2xl text-gold mt-28">My Portfolio Project 1</h1>
+            <a class="text-white transition-all hover:text-gold" href="#"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div
+          class="relative overflow-hidden rounded-md h-full xs:w-4/5 md:w-full xs:mx-auto"
+        >
+          <img
+            class="block transition-all hover:scale-110 w-full"
+            src="img/Portfolio/maxresdefault.jpg"
+            alt=""
+          />
+          <div
+            class="w-full h-0 bg-black/50 absolute left-0 bottom-0 overflow-hidden transition-all hover:h-full duration-1000 px-6"
+          >
+            <h1 class="text-2xl text-gold mt-28">My Portfolio Project 1</h1>
+            <a class="text-white transition-all hover:text-gold" href="#"
+              >See More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-screen bg-hero-img my-10 flex lg:justify-end py-10 px-6">
+      <div class="max-w-[1200px] lg:w-2/4 bg-gold/80 rounded-xl p-10">
+        <h1 class="text-2xl pb-5">Get a Free Quote</h1>
+        <form action="#">
+          <div class="flex flex-wrap gap-3">
+            <input
+              class="bg-darkGray lg:w-64 p-2 placeholder:text-gold text-gold focus:outline-none"
+              type="text"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              class="bg-darkGray lg:w-64 p-2 placeholder:text-gold text-gold focus:outline-none"
+              type="number"
+              name=""
+              id=""
+              placeholder="Phone"
+              required
+            />
+            <input
+              class="bg-darkGray lg:w-64 p-2 placeholder:text-gold text-gold focus:outline-none"
+              type="email"
+              name=""
+              id=""
+              placeholder="Email"
+              required
+            />
+            <input
+              class="bg-darkGray lg:w-64 p-2 placeholder:text-gold text-gold focus:outline-none"
+              type="text"
+              placeholder="Servces type"
+              required
+            />
+          </div>
+          <textarea
+            class="mt-2 bg-darkGray w-full h-40 p-3 placeholder:text-gold text-gold"
+            name=""
+            id=""
+            placeholder="Enter Your message"
+          ></textarea>
+          <input
+            class="bg-darkGray px-3 py-2 mt-5 rounded-lg text-gold transition-all hover:bg-gold hover:text-white"
+            type="button"
+            value="Get Quetee"
+          />
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <h1 class="md:text-2xl lg:text-4xl my-10 text-center">Our New Blogs</h1>
+      <div
+        class="max-w-[1200px] grid gap-3 mx-auto md:grid-cols-3 xs:w-9/12 md:w-full"
+      >
+        <div class="shadow-lg shadow-gray rounded-md">
+          <img
+            class="w-full h-1/2 rounded-md"
+            src="img/News Blogs/img1.jpg"
+            alt=""
+          />
+          <p class="text-gray pl-2 mt-4">16 jan 2024</p>
+          <h1 class="md:text-2xl xs:text-xl pl-2 py-5">
+            How to Rank a Website on Google
+          </h1>
+          <a class="pl-2 transition-all hover:text-gold" href="#">Read More</a>
+        </div>
+        <div class="shadow-lg shadow-gray rounded-md">
+          <img
+            class="w-full h-1/2 rounded-md"
+            src="img/News Blogs/img2.jpg"
+            alt=""
+          />
+          <p class="text-gray pl-2 mt-4">16 jan 2024</p>
+          <h1 class="md:text-2xl xs:text-xl pl-2 py-5">
+            How to Rank a Website on Google
+          </h1>
+          <a class="pl-2 transition-all hover:text-gold" href="#">Read More</a>
+        </div>
+        <div class="shadow-lg shadow-gray rounded-md">
+          <img
+            class="w-full h-1/2 rounded-md"
+            src="img/News Blogs/img3.avif"
+            alt=""
+          />
+          <p class="text-gray pl-2 mt-4">16 jan 2024</p>
+          <h1 class="md:text-2xl xs:text-xl pl-2 py-5">
+            How to Rank a Website on Google
+          </h1>
+          <a class="pl-2 transition-all hover:text-gold" href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-footerImg bg-cover mt-10">
+      <div class="grid md:grid-cols-3 xs:gird-cols-1 md:gap-5 lg:gap-0 lg:grid-cols-4 place-content-center h-full mx-5">
+        <div class=" py-14 px-5">
+          <div class="flex items-center p-5 bg-darkBlue/80 rounded-lg transition-all hover:bg-gray/30">
+            <i class="bx bxs-phone-call text-4xl text-gold pl-5 pr-2"></i>
+            <p class="text-gold">
+              <span class="text-white">Call us</span>
+              <br />
+              +923032150993
+            </p>
+          </div>
+          <div class="flex items-center my-3 p-5 bg-darkBlue/80 rounded-lg transition-all hover:bg-gray/30">
+            <i class="bx bx-current-location text-4xl text-gold pl-5 pr-2"></i>
+            <p class="text-gold">
+              <span class="text-white">Address</span>
+              <br />
+              Behrani Muhallah
+            </p>
+          </div>
+          <div class="flex items-center p-5 bg-darkBlue/80 rounded-lg transition-all hover:bg-gray/30">
+            <i class="bx bx-mail-send text-4xl text-gold pl-5 pr-2"></i>
+            <p class="text-gold">
+              <span class="text-white">Email Us</span>
+              <br />
+              zainabro886@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="text-white py-16 pl-10 lg:col-span-2 border-l border-gray/30">
+          <h1 class="text-gold md:text-3xl">About Company</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            omnis, expedita, voluptatum pariatur doloremque, corrupti ut quaerat
+            quisquam exercitationem corporis ipsam id dolore consequatur dicta.
+            Quibusdam sequi accusamus suscipit
+            <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nisi doloremque quaerat aperiam ratione eos cum quod impedit sed perspiciatis sapiente unde tempore natus, perferendis, molestias rerum distinctio dicta quisquam.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet.
+            <br>
+            Lorem ipsum dolor sit amet, consectetur.
+          </p>
+        </div>
+        <div class=" py-16 pl-3">
+          <h1 class="text-gold md:text-3xl">Useful Informations</h1>
+          <div>
+            <a class=" text-gold transition-all hover:text-themeFont hover:underline" href="#">About us</a>
+            <br>
+            <a class=" text-gold transition-all hover:text-themeFont hover:underline py-2" href="#">Portfolio</a>
+            <br>
+            <a class=" text-gold transition-all hover:text-themeFont hover:underline" href="#">Blog</a>
+            <br>
+            <a class=" text-gold transition-all hover:text-themeFont hover:underline py-2" href="#">Contact us</a>
+            <br>
+            <a class=" text-gold transition-all hover:text-themeFont hover:underline" href="#">FAQs</a>
+            <br>
+            <a class=" text-gold transition-all hover:text-themeFont hover:underline py-2" href="#">Privacy and policies</a>
+            <br>
+            <a class=" text-gold transition-all hover:text-themeFont hover:underline" href="#">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
